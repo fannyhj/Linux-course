@@ -8,7 +8,7 @@ Teimme projektin vanhalle virtuaalikoneelle, koska emme saaneet uutta toimimaan.
 
 Loimme ensimmäiseksi rakenteen komennolla "sudo mkdir -p /srv/salt/web/files" ja siirryimme hakemistoon cd:llä. 
 
-Avasimme sitten top.sls-tiedoston komennolla "sudo nano /srv/salt/top.sls" ja kirjoiimme sinne seuraavan:
+Määritimme sitten mitä stateja ajetaan top.sls-tiedostossa komennolla "sudo nano /srv/salt/top.sls" ja kirjoiimme sinne seuraavan:
 
 base:
 
@@ -16,7 +16,7 @@ base:
   
     - web
 
-Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Kuvassa näkyy tiedoston sisältö:
+Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Tiedostoon sisällytimme ohjeet Nginxin asentamiseen ja HTML-sivun paikoilleen laittamisen. Kuvassa näkyy tiedoston sisältö:
 
 
 <img width="837" height="466" alt="image" src="https://github.com/user-attachments/assets/6f6db70e-d73d-4536-a664-4573facba161" />
@@ -24,7 +24,7 @@ Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web
 
 
 
-Seuraavaksi teimme muutoksia index.html:ään komennolla "sudo nano /srv/salt/web/files/index.html". HTML-koodiin kirjoitettiin se mitä selaimessa näkyy. Kuva alla.
+Seuraavaksi kirjoitimme HTML-koodin, joka lopulta näkyy selaimessa. Teimme tämän index.html:ssä komennolla "sudo nano /srv/salt/web/files/index.html". Kuva alla.
 
 
 <img width="728" height="249" alt="image" src="https://github.com/user-attachments/assets/91bce59f-dfad-44a7-a146-788143644a1f" />
@@ -46,15 +46,19 @@ Kuvassa näkyy, ettei tämä toiminut joten katselin init.sls-tiedostoani ja huo
 
 Tulostuksessa näkyi 1=failed. Tämä oli koska Apache2 takia, joten poistin sen seuraavilla komennoilla:
 
-sudo systemctl stop apache2
+- sudo systemctl stop apache2
 
-sudo systemctl disable apache2
+- sudo systemctl disable apache2
 
-sudo apt-get remove -y apache2
- 
-sudo systemctl start nginx
+- sudo apt-get remove -y apache2
 
-sudo systemctl status nginx
+
+Sitten varmistin, että Nginx-palvelin on käynnissä komennoilla:
+
+
+- sudo systemctl start nginx
+
+- sudo systemctl status nginx
  
 
 Tämän jälkeen alkoi toimimaan.
@@ -67,3 +71,10 @@ Tarkisimme viimeisenä, että teksti näkyy http://localhostissa verkkoselaimell
 <img width="592" height="288" alt="image" src="https://github.com/user-attachments/assets/4a4f59c7-5231-46e3-840a-4d15af8753dd" />
 
 Kaikki toimii, joten projekti sai päätöksen!
+
+
+## Lähteet:
+Nginx - https://nginx.org/
+Tero Karvinen, 2025. Palvelinen hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt
+Salt Project, 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/3006/ref/states/top.html
+
