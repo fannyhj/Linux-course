@@ -1,7 +1,20 @@
-sudo nano top.sls
-- web
+# Web-palvelin – Nginx + HTML-sivu
 
-sudo nano init.sls
+Projektissamme yksi Salt state asentaa Nginxin ja laitaa oman index.html -tiedoson paikoilleen. Projekti siis asenttaa Nginx-palvelimen ja julkaisee esimerkkisivun automaattisesti. Nginx on avoimen lähdekoodin ohjelmisto, jota käytetään pääasiassa verkkopalvelimena, mutta voidaan käyttää myös välityspalvelimena (reverse proxy), kuormantasaajana (load balancer) ja välimuistina (caching).
+
+Aloitimme projektin tekemällä uuden virtuaalikoneen. Ajattelimme, että toinen ottaisi SSH-yhteyden toisen koneeseen ja tekisimme yhdessä projektia samalle koneelle. Oli kuitenkin SSH-yhteyden muodostamiesssa useita ongelmia, joten päätimme tehdä projektia omilla koneillamme.
+
+Teimme projektin vanhalle virtuaalikoneelle, koska emme saaneet uutta toimimaan. Koneelle oli jo asenettuna Salt, mutta tarkistin sen vielä komennolla "Sudo salt-call --local test.ping" ja sain tulostuksena 'True'. 
+
+Loimme ensimmäiseksi rakenteen komennolla "sudo mkdir -p /srv/salt/web/files" ja siirryimme hakemistoon cd:llä. 
+
+Avasimme sitten top.sls-tiedoston komennolla "sudo nano /srv/salt/top.sls" ja kirjoiimme sinne seuraavan:
+
+base:
+  '*':
+    - web
+
+Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Kuvassa näkyy tiedoston sisältö:
 <img width="837" height="466" alt="image" src="https://github.com/user-attachments/assets/6f6db70e-d73d-4536-a664-4573facba161" />
 
 
