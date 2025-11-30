@@ -11,7 +11,9 @@ Loimme ensimmäiseksi rakenteen komennolla "sudo mkdir -p /srv/salt/web/files" j
 Avasimme sitten top.sls-tiedoston komennolla "sudo nano /srv/salt/top.sls" ja kirjoiimme sinne seuraavan:
 
 base:
+
   '*':
+  
     - web
 
 Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Kuvassa näkyy tiedoston sisältö:
