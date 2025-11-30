@@ -16,7 +16,7 @@ base:
   
     - web
 
-Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Tiedostoon sisällytimme ohjeet Nginxin asentamiseen ja HTML-sivun paikoilleen laittamisen. Kuvassa näkyy tiedoston sisältö:
+Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web/init.sls". Tiedostoon sisällytimme ohjeet Nginxin asentamiseen ja HTML-sivun paikoilleen laittamisen. (Salt Project, 2025) Kuvassa näkyy tiedoston sisältö:
 
 
 <img width="837" height="466" alt="image" src="https://github.com/user-attachments/assets/6f6db70e-d73d-4536-a664-4573facba161" />
@@ -77,4 +77,4 @@ Kaikki toimii, joten projekti sai päätöksen!
 Nginx - https://nginx.org/
 Tero Karvinen, 2025. Palvelinen hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt
 Salt Project, 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/3006/ref/states/top.html
-
+Salt Project, 2025. Salt.States.Pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg
