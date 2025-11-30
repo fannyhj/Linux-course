@@ -30,13 +30,11 @@ Yritin sitten kokeilla, että kaikki on okei ennen virallista ajamista. Tein tä
 <img width="1102" height="158" alt="image" src="https://github.com/user-attachments/assets/7fd52694-05e6-421b-83ec-e9419415bab8" />
 
 
-Kuvassa näkyy, ettei tämä toiminut
+Kuvassa näkyy, ettei tämä toiminut joten katselin init.sls-tiedostoani ja huomasin, että unohdin viivan viimeisen rivin edestä. Korjasin tämän ja alkoi toimimaan.
 
-
-apache2
 <img width="1080" height="480" alt="image" src="https://github.com/user-attachments/assets/ce7cdcf7-023a-4df9-97c9-afd0b28ea7c7" />
 
-
+Tulostuksessa näkyi 1=failed. Tämä oli koska Apache2
 poistin
 sudo systemctl stop apache2
 
