@@ -18,12 +18,19 @@ Tämän jälkeen avasimme init.sls-tiedoston komennolla "sudo nano /srv/salt/web
 <img width="837" height="466" alt="image" src="https://github.com/user-attachments/assets/6f6db70e-d73d-4536-a664-4573facba161" />
 
 
+
+
+Seuraavaksi teimme muutoksia index.html:ään komennolla "sudo nano /srv/salt/web/files/index.html". HTML-koodiin kirjoitettiin se mitä selaimessa näkyy. Kuva alla.
 <img width="728" height="249" alt="image" src="https://github.com/user-attachments/assets/91bce59f-dfad-44a7-a146-788143644a1f" />
 
-eiu toimi
+
+
+
+Yritin sitten kokeilla, että kaikki on okei ennen virallista ajamista. Tein tämän komennolla "sudo salt-call --local state.apply test=TRUE".
 <img width="1102" height="158" alt="image" src="https://github.com/user-attachments/assets/7fd52694-05e6-421b-83ec-e9419415bab8" />
 
-puutui yksi viiva init.sls
+
+Kuvassa näkyy, ettei tämä toiminut
 
 
 apache2
