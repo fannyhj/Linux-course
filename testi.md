@@ -1,6 +1,6 @@
 # Web-palvelin – Nginx + HTML-sivu | Fanny Harju & Satu Harjula
 
-Projektissamme yksi Salt state asentaa Nginxin ja laitaa oman index.html -tiedoson paikoilleen. Projekti siis asenttaa Nginx-palvelimen ja julkaisee esimerkkisivun automaattisesti. Nginx on avoimen lähdekoodin ohjelmisto, jota käytetään pääasiassa verkkopalvelimena, mutta voidaan käyttää myös välityspalvelimena (reverse proxy), kuormantasaajana (load balancer) ja välimuistina (caching).
+Projektissamme yksi Salt state asentaa Nginxin ja laittaa oman index.html -tiedoson paikoilleen. Projekti siis asenttaa Nginx-palvelimen ja julkaisee esimerkkisivun automaattisesti. Nginx on avoimen lähdekoodin ohjelmisto, jota käytetään pääasiassa verkkopalvelimena, mutta voidaan käyttää myös välityspalvelimena (reverse proxy), kuormantasaajana (load balancer) ja välimuistina (caching).
 
 Aloitimme projektin tekemällä uuden virtuaalikoneen. Ajattelimme, että toinen ottaisi SSH-yhteyden toisen koneeseen ja tekisimme yhdessä projektia samalle koneelle. Oli kuitenkin SSH-yhteyden muodostamiesssa useita ongelmia, joten päätimme tehdä projektia omilla koneillamme.
 
