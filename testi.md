@@ -74,7 +74,9 @@ Kaikki toimii, joten projekti sai päätöksen!
 
 
 ## Lähteet:
+
 Nginx - https://nginx.org/
+
 Tero Karvinen, 2025. Palvelinen hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt
 
 Salt Project, 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/3006/ref/states/top.html
