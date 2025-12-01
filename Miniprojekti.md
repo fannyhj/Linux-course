@@ -61,7 +61,7 @@ Sitten varmistin, että Nginx-palvelin on käynnissä komennoilla:
 - sudo systemctl status nginx
  
 
-Tämän jälkeen alkoi toimimaan.
+Tämän jälkeen alkoi toimimaan. Kokeilin sitten lopullisen tuloksen komennolla "sudo salt-call --local state.apply".
 
 <img width="949" height="502" alt="image" src="https://github.com/user-attachments/assets/7aa8a70a-46b0-453e-aae3-05fc44e66a73" />
 
