@@ -18,3 +18,8 @@ Projektissa yksi Salt sate tekee kaiken tarvittavan:
 ## Lopputulos
 
 <img width="592" height="288" alt="520519837-4a4f59c7-5231-46e3-840a-4d15af8753dd" src="https://github.com/user-attachments/assets/6754ab37-1b41-4862-b5df-5120101685f5" />
+
+
+## Lisenssi
+
+Projekti on lisensoitu GPLv3-lisenssillä. Katso tarkemmat tiedot tiedostosta LICENSE.
