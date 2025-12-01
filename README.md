@@ -4,7 +4,7 @@ Homework reports for Linux course ICI001AS3A-3012 taught by Tero Karvinen
 
 # Miniprojekti: Web-palvelin – Nginx + HTML-sivu | Fanny Harju & Satu Harjula
 
-Tämän projektin tarkoituksena on asentaa Nginx-webpalvelin ja julkaisa oma HTML-sivu automaattisesti Salin avulla yhdellä komennolla.
+Tämän projektin tarkoituksena on asentaa Nginx-webpalvelin ja julkaisa oma HTML-sivu automaattisesti Saltin avulla yhdellä komennolla.
 
 ## Projekttin toiminta
 
