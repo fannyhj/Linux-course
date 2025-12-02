@@ -84,3 +84,5 @@ Salt Project, 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/30
 Salt Project, 2025. Salt.States.Pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg
 
 Salt Project, 2025. Salt.States.File. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file
+
+ChatGPT:tä hyödynnetty virheiden korjauksessa.
